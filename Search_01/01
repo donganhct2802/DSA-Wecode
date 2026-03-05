@@ -1,0 +1,45 @@
+# [Search01.01] Tìm giá trị X trong mảng
+
+##  1. Đề bài
+Tìm giá trị $X$ trong mảng 1 chiều lưu $n$ phần tử ($n \le 400,000$). Các số nguyên có giá trị $< 2$ tỷ. 
+
+* **Yêu cầu**: Viết hàm **tìm kiếm tuyến tính** (Linear Search).
+* **Đầu ra**: Nếu tìm thấy, xuất `true`. Ngược lại xuất `false`.
+
+### INPUT
+1. Số nguyên đầu tiên: số nguyên $X$ cần tìm.
+2. Số nguyên thứ hai: số lượng phần tử $n$ của mảng.
+3. Các số nguyên còn lại: giá trị của các phần tử trong mảng.
+
+### OUTPUT
+* `true` hoặc `false`.
+
+### Ví dụ
+| Input | Output |
+| :--- | :--- |
+| 3 <br> 8 <br> 2 2 4 4 5 5 6 6 | false |
+| 2 <br> 8 <br> 2 2 4 4 5 5 6 6 | true |
+
+---
+
+##  2. Template mẫu
+
+#include <iostream>
+#define MAXN 400000
+
+// === Your solution here ===
+
+// Chị cần viết hàm: void NhapMang(int a[], int &n)
+// Chị cần viết hàm: int LinearSearch(int a[], int n, int x)
+
+// ==========================
+
+int main() {
+int a[MAXN], n, x;
+std::cin >> x;
+NhapMang(a, n);
+int i = LinearSearch(a, n, x);
+if (i == -1) std::cout << "false";
+else std::cout << "true";
+return 0;
+}

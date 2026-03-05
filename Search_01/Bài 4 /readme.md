@@ -15,14 +15,8 @@
 #include <iostream>
 using namespace std;
 
-void NhapMang(int A[], const int N) {
-    for (int i = 0; i < N; i++)
-        std::cin >> A[i];
-}
-
 
 // Your code here
-
 
 
 int main() {
